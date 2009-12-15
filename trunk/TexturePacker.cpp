@@ -506,7 +506,17 @@ public:
         t.mX++;
         t.mY++;
       }
-      int y = t.mY+t.mHeight;
+
+      int y;
+      if (t.mFlipped)
+      {
+        y = t.mY + t.mWidth;
+      }
+      else
+      {
+        y = t.mY + t.mHeight;
+      }	  
+
       if ( y > height )
         height = y;
     }
