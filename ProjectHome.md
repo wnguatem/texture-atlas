@@ -1,0 +1,1 @@
+A texture atlas is where you take a whole bunch of different textures and fit them onto a single large texture efficiently.
